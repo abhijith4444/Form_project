@@ -1,0 +1,13 @@
+form{
+    width: 400px;
+    /* margin-bottom: 100px; */
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+Button{
+    width: 100px;
+   /* left: 200px; */
+   top: 40px;
+   justify-content: center;
+}
