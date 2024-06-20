@@ -15,13 +15,13 @@ const TableComponent = ({ entries }) => {
   return (
     <TableContainer component={Paper}>
       <Table sx={{border:2,boxShadow:5}} color="secondary" size="small" aria-label="a dense table">
-        <TableHead >
+      <TableHead >
           <TableRow >
             <TableCell>Name</TableCell>
             <TableCell>Email</TableCell>
             <TableCell>Age</TableCell>
           </TableRow>
-        </TableHead>
+      </TableHead>
         <TableBody>
           {entries.map((entry, index) => (
             <TableRow key={index} onClick={() => downloadPDF(entry)} style={{ cursor: 'pointer' }}>
@@ -29,6 +29,7 @@ const TableComponent = ({ entries }) => {
               <TableCell>{entry.email}</TableCell>
               <TableCell>{entry.age}</TableCell>
             </TableRow>
+            
           ))}
         </TableBody>
       </Table>

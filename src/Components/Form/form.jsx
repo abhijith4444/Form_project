@@ -3,11 +3,6 @@ import { useFormik } from 'formik';
 import { TextField, Button } from '@mui/material';
 import './form.css'
 import Box from '@mui/material/Box';
-import Typography from '@mui/material';
-
-
-
-
 
 
 const FormComponent = ({ addEntry }) => {
@@ -46,7 +41,6 @@ const FormComponent = ({ addEntry }) => {
         value={formik.values.name}
         onChange={formik.handleChange}
         margin="normal"
-        
         sx={{ borderRadius:3, boxShadow:4}}
       />
       <TextField
@@ -66,7 +60,7 @@ const FormComponent = ({ addEntry }) => {
         label="Age"
         value={formik.values.age}
         onChange={formik.handleChange}
-        margin="normal"
+       margin="normal"
         sx={{ borderRadius:3, boxShadow:4}}
       />
       <Button className='Button' color="primary" variant="contained" sx={{boxShadow:5}} type="submit">
